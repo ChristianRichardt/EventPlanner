@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+:root{
+    --primaryNeutralColor: #393939;
+    --secondaryNeutralColor: #2F2F2F;
+    --accentNeutralColor: #A4A4A4;
+
+    --cPink: #F71ED7;
+    --cPurple: #B31AD9;
+    --cMidPurple: #9329F0;
+    --cMidBlue: #4D1AD9;
+    --cBlue: #1E21F7;
+}
+.CreationPanel{
+    height:fit-content;
+    width: 200px;
+    padding:20px 5px 30px 5px;
+    text-align: center;
+    
+    font-family: "montserrat";
+    background-color: var(--secondaryNeutralColor);
+    border: 2px solid;
+    border-image: linear-gradient(160.48deg, #F61ED7 0%, #4D1AD9 100%) 1;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    color: var(--accentNeutralColor);
+
+    cursor:move;
+}
+.CreationPanel legend{
+    font-weight: bold;
+}
+.CreationPanel input{
+    height: 40px;
+    margin-bottom: 15px;
+
+    background-color: var(--secondaryNeutralColor);
+    color:white;
+    border: 2px solid #898989;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.CreationPanel input:focus{
+    outline: none;
+    border: 2px solid var(--accentNeutralColor);
+}

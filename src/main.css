@@ -1,0 +1,42 @@
+:root{
+    --primaryNeutralColor: #393939;
+    --secondaryNeutralColor: #2F2F2F;
+    --accentNeutralColor: #A4A4A4;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    background-color: var(--primaryNeutralColor);
+}
+.TopPanel{
+    width: 100vw;
+    height: 60px;
+    z-index: 2;
+
+    box-sizing: border-box;
+    background-color: var(--secondaryNeutralColor);
+    border-bottom: solid 5px;
+    border-image: linear-gradient(to right, #F61ED7, #4D1AD9) 1;
+}
+.CenterButtons{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left:calc(50% - ((3 * 2em)/2) - 60px);
+    top:13px;
+
+}
+.CenterButtons i{
+    color: var(--accentNeutralColor);
+    cursor: pointer;
+
+}
+.Dividers{
+    width:1px;
+    height:30px;
+    background-color: var(--accentNeutralColor);
+    margin: 1px 15px 1px 15px;
+}
